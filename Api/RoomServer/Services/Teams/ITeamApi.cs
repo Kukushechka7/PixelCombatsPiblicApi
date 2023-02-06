@@ -37,11 +37,14 @@ namespace PixelCombats.Api.RoomServer.Services.Teams
 		/// <para>если запросить ссылку на несуществующую команду, то такая ссылка будет получена, но будет неактивна, пока ее не добавят через <see cref="ITeamsService.Add"/></para>
 		/// </summary>
 		bool IsActive { get; }
+                /// <summary>
+		/// вернёт список игроков в команде
+                void GetPlayers();
+		/// </summary>
 		/// <summary>
 		/// возвращает количество живых игроков в команде
 		/// </summary>
 		int GetAlivePlayersCount();
-
 		/// <summary>
 		/// контекст переменных команды (см сервис <see cref="IPropertiesService"/>)
 		/// </summary>
