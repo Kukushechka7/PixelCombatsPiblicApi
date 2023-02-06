@@ -40,7 +40,7 @@ namespace PixelCombats.Api.RoomServer.Services.Teams
    /// <summary>
    /// вернёт список игроков в команде
    /// </summary>
-          void GetPlayers();
+   void GetPlayers();
 		/// <summary>
 		/// возвращает количество живых игроков в команде
 		/// </summary>
