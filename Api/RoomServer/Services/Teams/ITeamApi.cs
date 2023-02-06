@@ -36,11 +36,10 @@ namespace PixelCombats.Api.RoomServer.Services.Teams
 		/// <para>неактивная команда это либо та, которая удалилась в процессе игры, либо не существующая по каким-то причинам в комнате</para>
 		/// <para>если запросить ссылку на несуществующую команду, то такая ссылка будет получена, но будет неактивна, пока ее не добавят через <see cref="ITeamsService.Add"/></para>
 		/// </summary>
-		bool IsActive { get; }
-                /// <summary>
-		/// вернёт список игроков в команде
-                void GetPlayers();
-		/// </summary>
+		bool IsActive { get; }/// <summary>
+/// вернёт список игроков в команде
+/// </summary>
+          void GetPlayers();
 		/// <summary>
 		/// возвращает количество живых игроков в команде
 		/// </summary>
