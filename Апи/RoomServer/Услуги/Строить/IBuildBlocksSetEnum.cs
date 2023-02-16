@@ -28,7 +28,10 @@ namespace PixelCombats.Api.RoomServer.Services.Build
 		/// набор блоков для синей команды
 		/// </summary>
 		IBlocksSet Red { get; }
-
+                /// <summary>
+                /// кастомный набор блоков
+                /// </summary>
+                IBlocksSet CustomBlocksSet(IBlocksSet BlockSet);
 		/// <summary>
 		/// возвращает набор блоков по его ID
 		/// <para>если набора с указанным ID не существует то выдаст пустой набор</para>
