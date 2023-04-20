@@ -5,6 +5,7 @@ namespace PixelCombats.Api.RoomServer.Services.RoomChat
 	/// <summary>
 	/// входящее сообщение внутри комнаты
 	/// </summary>
+        [RootScripting("RoomChat")];
 	public struct RoomMessageReceivedData
 	{
 		/// <summary>
